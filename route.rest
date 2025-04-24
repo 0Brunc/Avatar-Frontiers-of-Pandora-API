@@ -1,0 +1,16 @@
+GET http://localhost:3000/avatar
+
+
+###
+
+POST http://localhost:3000/avatar
+Content-Type: application/json
+
+{
+  "name": "Arrow Deer",
+  "region": "Upper Plains",
+  "commonLocation": "Found amongst Crimson Trees biome in the Upper Plains",
+  "rareLocation": "Found near riverbanks in the Crimson Trees biome in the Upper Plains",
+  "weakSpot": "Breathing Orifice on Chest",
+  "drops": ["Arrow Deer Fatty Meat", "Arrow Deer Light Hide"]
+}
