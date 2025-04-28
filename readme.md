@@ -1,15 +1,11 @@
-GET http://localhost:3000/pandora/
+# Pandora Species API
 
-###
+My first REST API for managing species data from Avatar: Frontiers of Pandora using basic CRUD operations, built with Node.js, Express, mongoose and with MongoDB database integration.
 
-GET http://localhost:3000/pandora/680bc2cfbff984c10c75802b
+## Wildlife Model Example
 
-###
-
-POST http://localhost:3000/pandora
-Content-Type: application/json
-
-{ "type":"Wildlife",
+{
+  "type":"Wildlife",
   "name": "Arrow Deer",
   "region": "Upper Plains",
   "commonLocation": "Found amongst Crimson Trees biome in the Upper Plains",

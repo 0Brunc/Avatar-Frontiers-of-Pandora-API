@@ -2,7 +2,13 @@ const mongoose = require('mongoose');
 
 const MAX_STRING_LENGTH = 150;
 
-const wildlifeSchema = new mongoose.Schema({
+// This applies to flora and fauna
+const speciesSchema = new mongoose.Schema({
+  type: {
+    type: String,
+    required: true,
+    maxLength: MAX_STRING_LENGTH,
+  },
   name: {
     type: String,
     required: true,
@@ -32,4 +38,4 @@ const wildlifeSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Wildlife', wildlifeSchema);
+module.exports = mongoose.model('Species', speciesSchema);

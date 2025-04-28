@@ -12,7 +12,7 @@ db.once('open', () => console.log('Connected to Database'));
 
 app.use(express.json());
 
-const avatarRouter = require('./routes/avatar');
-app.use('/avatar', avatarRouter);
+const pandoraRouter = require('./routes/pandora');
+app.use('/pandora', pandoraRouter);
 
 app.listen(3000, () => console.log('Server started'));
